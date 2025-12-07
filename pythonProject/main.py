@@ -123,3 +123,82 @@ print("hello")
 # list_to_sort_2 = [1, 2, 3, 4, 5, 0]
 # advanced_bubble_sort(list_to_sort_2)
 # print(f"Отсортированный список 2: {list_to_sort_2}")
+
+
+
+#1)
+# import random
+# def linear_search(arr, target):
+#     for i in range(len(arr)):
+#         if arr[i] == target:
+#             return i
+#     return -1
+# def task1():
+#     print("# Задание 1")
+#     list1 = [random.randint(1, 20) for _ in range(5)]
+#     list2 = [random.randint(1, 20) for _ in range(5)]
+#     list3 = [random.randint(1, 20) for _ in range(5)]
+#     list4 = [random.randint(1, 20) for _ in range(5)]
+#     combined_list = list1 + list2 + list3 + list4
+#     print(f"Исходный объединенный список: {combined_list}")
+#     sort_choice = input("Выберите тип сортировки (asc - по возрастанию, desc - по убыванию): ")
+#     if sort_choice.lower() == 'desc':
+#         combined_list.sort(reverse=True)
+#         print(f"Список после сортировки по убыванию: {combined_list}")
+#     else:
+#         combined_list.sort()
+#         print(f"Список после сортировки по возрастанию: {combined_list}")
+#     try:
+#         search_value = int(input("Введите целое число для поиска: "))
+#         index = linear_search(combined_list, search_value)
+#         if index != -1:
+#             print(f"Ответ: Элемент {search_value} найден по индексу {index}.")
+#         else:
+#             print(f"Ответ: Элемент {search_value} не найден в списке.")
+#     except ValueError:
+#         print("Ошибка ввода. Пожалуйста, введите целое число.")
+#2)
+# def binary_search(arr, target):
+#     high = 0
+#     high = len(arr) - 1
+#     while low <= high:
+#         mid = (low + high) // 2
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] < target:
+#             low = mid + 1
+#         else:
+#             high = mid - 1
+#     return -1
+# def task2():
+#     print("# Задание 2")
+#     list1 = [random.randint(1, 15) for _ in range(5)]
+#     list2 = [random.randint(1, 15) for _ in range(5)]
+#     list3 = [random.randint(1, 15) for _ in range(5)]
+#     list4 = [random.randint(1, 15) for _ in range(5)]
+#     print(f"Список 1: {list1}\nСписок 2: {list2}\nСписок 3: {list3}\nСписок 4: {list4}")
+#     all_elements = list1 + list2 + list3 + list4
+#     unique_to_each = []
+#     for elem in all_elements:
+#         count = list1.count(elem) + list2.count(elem) + list3.count(elem) + list4.count(elem)
+#         if count == 1 and elem not in unique_to_each:
+#             unique_to_each.append(elem)
+#     print(f"Список уникальных элементов (встречающихся только в одном из списков): {unique_to_each}")
+#     sort_choice = input("Выберите тип сортировки (asc - по возрастанию, desc - по убыванию): ")
+#     if sort_choice.lower() == 'desc':
+#         unique_to_each.sort(reverse=True)
+#         print(f"Список после сортировки по убыванию: {unique_to_each}")
+#     else:
+#         unique_to_each.sort()
+#         print(f"Список после сортировки по возрастанию: {unique_to_each}")
+#     try:
+#         search_value = int(input("Введите целое число для поиска бинарным поиском: ")):
+# index = binary_search(unique_to_each, search_value)
+#         if index != -1:
+#             print(f"Ответ: Элемент {search_value} найден по индексу {index}.")
+#         else:
+#             print(f"Ответ: Элемент {search_value} не найден в списке.")
+#     except ValueError:
+#         print("Ошибка ввода. Пожалуйста, введите целое число.")
+# task1()
+# task2()
