@@ -236,4 +236,75 @@
 #     else:
 #         print(f"Значение {user_value} не найдено в списке.")
 # except ValueError:
-#     print("Некорректный ввод. Пожалуйста, введите целое")
+#     print("Некорректный ввод. Пожалуйста, введите целое")#1)
+#def task_1():
+#     ids = [101, 105, 103, 102]
+#     phones = ["555-1234", "555-5678"]
+#     while True:
+#         print("\nМеню программы 'Справочник':")
+#         print("1. Отсортировать по идентификационным кодам")
+#         print("2. Отсортировать по номерам телефона")
+#         print("3. Вывести список пользователей с кодами и телефонами")
+#         print("4. Выход")
+#         choice = input("Выберите пункт меню: ")
+#         if choice == '1':
+#             combined_list = sorted(zip(ids, phones))
+#             ids, phones = zip(*combined_list)
+#             print("Списки отсортированы по идентификационным кодам.")
+#         elif choice == '2':
+#             combined_list = sorted(zip(phones, ids))
+#             phones, ids = zip(*combined_list)
+#             print("Списки отсортированы по номерам телефона.")
+#         elif choice == '3':
+#             print("Список пользователей:")
+#             for i, p in zip(ids, phones):
+#                 print(f"Код: {i}, Телефон: {p}")
+#         elif choice == '4':
+#             break
+#         else:
+#             print("Неверный ввод.")
+# task_1()
+#2)
+# def task_2():
+#     titles = ["Преступление и наказание", "Мастер и Маргарита", "Война и мир", "Отцы и дети"]
+#     years = [1866, 1966, 1869, 1862]
+#     while True:
+#         print("\nМеню программы 'Книги':")
+#         print("1. Отсортировать по названию книг")
+#         print("2. Отсортировать по годам выпуска")
+#         print("3. Вывести список книг с названиями и годами выпуска")
+#         print("4. Выход")
+#         choice = input("Выберите пункт меню: ")
+#         if choice == '1':
+#             combined_list = sorted(zip(titles, years))
+#             titles, years = zip(*combined_list)
+#             print("Списки отсортированы по названию.")
+#         elif choice == '2':
+#             combined_list = sorted(zip(years, titles))
+#             years, titles = zip(*combined_list)
+#             print("Списки отсортированы по годам выпуска.")
+#         elif choice == '3':
+#             print("Список книг:")
+#             for t, y in zip(titles, years):
+#                 print(f"Название: '{t}', Год: {y}")
+#         elif choice == '4':
+#             break
+#         else:
+#             print("Неверный ввод. Попробуйте снова.")
+# if __name__ == "main":
+#     while True:
+#         print("\nВыберите задание для выполнения:")
+#         print("1. Задание 1 (Справочник)")
+#         print("2. Задание 2 (Книги)")
+#         print("3. Выход")
+#         main_choice = input("Ваш выбор: ")
+#         if main_choice == '1':
+#             task_1()
+#         elif main_choice == '2':
+#             task_2()
+#         elif main_choice == '3':
+#             break
+#         else:
+#             print("Неверный ввод. Попробуйте снова.")
+# task_2()
+#
